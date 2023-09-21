@@ -13,8 +13,8 @@ def predict(img):
     pred,pred_idx,probs = learn.predict(img)
     return {labels[i]: float(probs[i]) for i in range(len(labels))}
 
-title = "Pet Breed Classifier"
-description = "A pet breed classifier trained on the Oxford Pets dataset with fastai. Created as a demo for Gradio and HuggingFace Spaces."
+title = "Is it cilantro or parsley"
+description = "Greens classifier for distinguishing cilantro and parsley and trained on images from DuckDuckGo."
 outputs=gr.outputs.Label(num_top_classes=2)
 examples = ['cilantro.jpg','parsley.jpg']
 interpretation='default'
